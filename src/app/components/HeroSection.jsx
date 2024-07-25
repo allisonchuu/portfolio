@@ -12,7 +12,7 @@ export default function HeroSection() {
       <div className="grid grid-cols-1 lg:grid-cols-9 place-self-center">
         <div className="col-span-5 place-self-center text-center lg:text-left">
           <h1 className="text-amber-950 mb-2 sm:mb-4 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
-            <span className="font-light">hi, i'm </span>
+            <span className="font-light">hi, i&apos;m </span>
             <br></br>
             <span
               className={`text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-cambridge-blue to-cherry-blossom-pink`}
