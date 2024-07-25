@@ -15,7 +15,8 @@ export default function HeroSection() {
             <span className="font-light">hi, i&apos;m </span>
             <br></br>
             <span
-              className={`text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-cambridge-blue to-cherry-blossom-pink`}
+              className={`text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white`}
+              // className={`text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-cambridge-blue to-cherry-blossom-pink`}
             >
               <TypeAnimation
                 wrapper="span"
