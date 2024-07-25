@@ -9,19 +9,19 @@ const pixel = Pixelify_Sans({ subsets: ["latin"] });
 const HeroSection = () => {
   return (
     <section>
-      <div className="grid grid-cols-1 lg:grid-cols-12">
-        <div className="col-span-7 place-self-center text-center sm:text-left">
-          <h1 className="text-amber950 mb-4 text-3xl sm:text-4xl lg:text-5xl">
+      <div className="grid grid-cols-1 lg:grid-cols-9 place-self-center">
+        <div className="col-span-5 place-self-center text-center lg:text-left">
+          <h1 className="text-amber-950 mb-2 sm:mb-4 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
             <span className="font-light">hi, i'm </span>
             <br></br>
             <span
-              className={`text-6xl text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-400`}
+              className={`text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-cambridge-blue to-cherry-blossom-pink`}
             >
               <TypeAnimation
                 wrapper="span"
                 style={{
                   height: "50px",
-                  width: "550px",
+                  width: "625px",
                   display: "inline-block",
                 }}
                 sequence={[
@@ -38,27 +38,27 @@ const HeroSection = () => {
             </span>
           </h1>
           <p className="text-stone-500 text-base sm:text-lg mb-6 lg:text-xl">
-            this is my
+            this is my website :)
           </p>
-          <div className="sm:m-4">
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-200 via-purple-300 to-pink-300 hover:bg-slate-100 text-white">
+          <div className="place-content-center">
+            <button className="px-6 py-3 w-3/5 md:w-fit rounded-full md:mr-4 bg-gradient-to-br from-cherry-blossom-pink via-cambridge-blue to-celadon hover:bg-champagne-pink text-white">
               Hire Me
             </button>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-200 via-purple-300 to-pink-300 hover:bg-white text-amber-950 mt-3">
-              <span className="block bg-white hover:bg-white rounded-full px-5 py-2">
+            <button className="px-1 py-1 w-3/5 md:w-fit rounded-full bg-gradient-to-br from-cherry-blossom-pink via-cambridge-blue to-celadon hover:bg-white text-amber-950 mt-3">
+              <span className="block bg-white hover:bg-snow rounded-full px-5 py-2">
                 Download CV
               </span>
             </button>
           </div>
         </div>
-        <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-          <div className=" h-[250px] lg:h-[300px] relative">
+        <div className="col-span-4 place-self-center lg:place-self-start mt-4 lg:mt-0 floating">
+          <div className="rounded-full bg-champagne-pink !bg-opacity-25 w-[250px] h-[250px] lg:w-[375px] lg:h-[375px] xl:w-[475px] xl:h-[475px] relative">
             <Image
               src="/images/strawbeari-and-single-cloud.png"
               alt="strawbeari hero image"
-              className="transform top-1/2 left-1/2"
-              width={300}
-              height={300}
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:mt-5"
+              width={500}
+              height={500}
             />
           </div>
         </div>
