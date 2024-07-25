@@ -22,6 +22,7 @@ module.exports = {
         "celadon": "#ADD0AB",
         "cambridge-blue": "#96B595",
         "snow": "#FFF9F6",
+        "westar": "#e4e2db",
       },
     },
   },

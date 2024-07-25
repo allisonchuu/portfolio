@@ -6,7 +6,7 @@ import { Pixelify_Sans } from "next/font/google";
 
 const pixel = Pixelify_Sans({ subsets: ["latin"] });
 
-const HeroSection = () => {
+export default function HeroSection() {
   return (
     <section>
       <div className="grid grid-cols-1 lg:grid-cols-9 place-self-center">
@@ -65,6 +65,4 @@ const HeroSection = () => {
       </div>
     </section>
   );
-};
-
-export default HeroSection;
+}
