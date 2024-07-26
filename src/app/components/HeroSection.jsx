@@ -56,7 +56,7 @@ export default function HeroSection() {
             <Image
               src="/images/strawbeari-and-single-cloud.png"
               alt="strawbeari hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:mt-5"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:mt-5 "
               width={500}
               height={500}
             />
