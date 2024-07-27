@@ -70,9 +70,9 @@ export default function AboutSection() {
   };
 
   return (
-    <section className="text-amber-950" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-8 xl:gap-16 sm:py-16 xl:px-16">
-        <div className="rounded-full relative bg-snow w-[250] h-[250]  lg:w-[325px] lg:h-[325px] xl:w-[400px] xl:h-[400px] drop-shadow-md">
+    <section className="text-amber-950 m-10" id="about">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-8 px-8 xl:gap-16 sm:py-16 xl:px-16">
+        <div className="rounded-full relative flex place-self-center  bg-snow w-[250] h-[250] lg:w-[325px] lg:h-[325px] xl:w-[400px] xl:h-[400px] drop-shadow-md">
           <Image
             src="/images/profile.png"
             alt="profile picture"
