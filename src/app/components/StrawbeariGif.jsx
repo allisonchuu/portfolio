@@ -8,7 +8,7 @@ export default function StrawbeariGif() {
 
   const showPandaGif = () => {
     if (!showPanda) {
-      setExtraPandaClasses("-translate-x-[450px]");
+      setExtraPandaClasses("-translate-x-[295px]");
       setShowPanda(true);
     } else {
       setExtraPandaClasses("");
@@ -18,7 +18,7 @@ export default function StrawbeariGif() {
 
   return (
     <div
-      className={`w-[550px] h-[350px] block fixed bottom-[50px] -right-[460px] transition-transform duration-500 ${extraPandaClasses}`}
+      className={`w-[360px] h-[275px] block fixed bottom-0 -right-[300px] transition-transform duration-500 ${extraPandaClasses}`}
     >
       <Image
         src="/images/funstrawbeari.png"
@@ -29,13 +29,13 @@ export default function StrawbeariGif() {
         unoptimized={true}
       />
       <div
-        className="absolute left-2 bottom-[142px]"
+        className="absolute left-1 bottom-[138px]"
         onClick={() => showPandaGif()}
       >
         <Image
           src="/images/strawberry.gif"
           alt="profile picture"
-          className="w-auto h-[60px]"
+          className="w-auto h-[40px]"
           width={100}
           height={100}
           unoptimized={true}
