@@ -8,21 +8,35 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Git</li>
-      </ul>
+      <div className="flex flex-row">
+        <ul className="list-disc pl-5">
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Git/Github</li>
+        </ul>
+        <ul className="list-disc pl-8">
+          <li>C++</li>
+          <li>Nightwatch.js</li>
+          <li>Jest</li>
+          <li>Jira</li>
+          <li>Unity</li>
+          <li>Procreate</li>
+        </ul>
+        <ul className="list-disc pl-8">
+          <li>Figma</li>
+          <li>Sketch</li>
+        </ul>
+      </div>
     ),
   },
   {
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-5">
         <li>Western Govenors University</li>
         <li>University California, Riverside</li>
       </ul>
@@ -32,7 +46,7 @@ const TAB_DATA = [
     title: "Experience",
     id: "experience",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-5">
         <li>
           Software Engineering Intern,{" "}
           <span className="italic">American Express, Phoenix, AZ - 2024</span>
@@ -52,7 +66,7 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-5">
         <li>N/A</li>
       </ul>
     ),
@@ -69,13 +83,15 @@ export default function AboutSection() {
     });
   };
 
+  //lg:grid-cols-2 lg:gap-10 lg:px-5 xl:gap-16 xl:px-16 mt-10 md:mt-20
+
   return (
     <section>
-      <div
-        id="about"
-        className="grid grid-cols-1 md:grid-cols-2 sm:gap-10 xl:gap-16 xl:px-16 text-amber-950 mt-10 md:mt-20 bg-champagne-pink bg-opacity-50 rounded-3xl"
-      >
-        <div className="rounded-full relative flex place-self-center">
+      <div className="grid grid-cols-1 mt-10 px-5 md:mt-32 lg:grid-cols-2 text-amber-950  bg-champagne-pink bg-opacity-50 rounded-[50px]">
+        <div
+          id="about"
+          className="rounded-full relative flex place-self-center px-10 pt-5 sm:pt-10 lg:pt-0"
+        >
           <Image
             src="/images/profile2.png"
             alt="profile picture"
@@ -83,9 +99,19 @@ export default function AboutSection() {
             height={400}
           />
         </div>
-        <div className="mt-4 md:mt-0 sm:p-8 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold mb-4">About Me</h2>
-          <p className="text-base lg:text-lg text-stone-500">
+        <div className="p-5 md:p-8 lg:py-12 text-left flex flex-col h-full">
+          <h2 className="flex flex-row align-middle text-4xl font-bold mb-3 ml-3">
+            About Me
+            <Image
+              src="/images/strawberryicon.png"
+              alt="profile picture"
+              className="w-auto h-[35px] inline-block ml-2 mt-0.5"
+              width={75}
+              height={75}
+              unoptimized={true}
+            />
+          </h2>
+          <p className="rounded-3xl px-6 py-3 bg-snow bg-opacity-50 text-base lg:text-xl text-stone-500">
             I am an aspiring{" "}
             <span className="text-cambridge-blue">Full Stack Developer </span>
             with a passion for creating interactive and responsive web
@@ -101,34 +127,36 @@ export default function AboutSection() {
             set. I am a team player and I am excited to work with others to
             create amazing applications.
           </p>
-          <div className="flex flex-row justify-start mt-8 sm:grid-flow-row">
-            <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              Skills
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
-              Education
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("experience")}
-              active={tab === "experience"}
-            >
-              Experience
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === ""}
-            >
-              Certifications
-            </TabButton>
-          </div>
-          <div className="mt-4">
-            {TAB_DATA.find((t) => t.id === tab).content}
+          <div className="my-8">
+            <div className="inline-block ml-3">
+              <TabButton
+                selectTab={() => handleTabChange("skills")}
+                active={tab === "skills"}
+              >
+                Skills
+              </TabButton>
+              <TabButton
+                selectTab={() => handleTabChange("education")}
+                active={tab === "education"}
+              >
+                Education
+              </TabButton>
+              <TabButton
+                selectTab={() => handleTabChange("experience")}
+                active={tab === "experience"}
+              >
+                Experience
+              </TabButton>
+              <TabButton
+                selectTab={() => handleTabChange("certifications")}
+                active={tab === "certifications"}
+              >
+                Certifications
+              </TabButton>
+            </div>
+            <div className="p-4 rounded-lg bg-snow min-h-44">
+              {TAB_DATA.find((t) => t.id === tab).content}
+            </div>
           </div>
         </div>
       </div>
