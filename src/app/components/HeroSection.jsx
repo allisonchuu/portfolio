@@ -105,15 +105,13 @@ export default function HeroSection() {
         <div className="col-span-5 flex flex-col items-center my-5 lg:mr-10 xl:mr-15">
           <div className="w-[275px] h-[250px] md:w-[350px] md:h-[325px] lg:w-[425px] lg:h-[400px] xl:w-[500px] xl:h-[475px] relative floating">
             <div className="rounded-full bg-champagne-pink !bg-opacity-25 w-[200px] h-[200px] md:w-[250px] md:h-[250px] lg:w-[325px] lg:h-[325px] xl:w-[400px] xl:h-[400px] absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"></div>
-            <motion.div whileHover={{ scale: 1.2 }}>
-              <Image
-                src="/images/strawbeari-and-single-cloud.png"
-                alt="strawbeari hero image"
-                className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                width={660}
-                height={462}
-              />
-            </motion.div>
+            <Image
+              src="/images/strawbeari-and-single-cloud.png"
+              alt="strawbeari hero image"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              width={660}
+              height={462}
+            />
           </div>
           <div className="rounded-full bg-stone-500 !bg-opacity-10 w-[150px] h-[20px] lg:w-[225px] lg:h-[30px] xl:w-[300px] xl:h-[40px] cloudshadow"></div>
         </div>
