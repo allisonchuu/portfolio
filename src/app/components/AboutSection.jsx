@@ -8,24 +8,20 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <div className="inline-flex">
-        <ul className="list-disc pl-5 ">
+      <div className="pl-5">
+        <ul className="list-disc grid grid-flow-row sm:grid-rows-8 md:grid-rows-6 sm:grid-flow-col">
           <li>JavaScript</li>
           <li>React</li>
           <li>Node.js</li>
           <li>HTML</li>
           <li>CSS</li>
           <li>Git/Github</li>
-        </ul>
-        <ul className="list-disc pl-8">
           <li>C++</li>
           <li>Nightwatch.js</li>
           <li>Jest</li>
           <li>Jira</li>
           <li>Unity</li>
           <li>Procreate</li>
-        </ul>
-        <ul className="list-disc pl-8">
           <li>Figma</li>
           <li>Sketch</li>
         </ul>
