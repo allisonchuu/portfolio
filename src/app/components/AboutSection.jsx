@@ -70,18 +70,20 @@ export default function AboutSection() {
   };
 
   return (
-    <section className="text-amber-950 m-10" id="about">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-8 px-8 xl:gap-16 sm:py-16 xl:px-16">
-        <div className="rounded-full relative flex place-self-center  bg-snow w-[250] h-[250] lg:w-[325px] lg:h-[325px] xl:w-[400px] xl:h-[400px] drop-shadow-md">
+    <section>
+      <div
+        id="about"
+        className="grid grid-cols-1 md:grid-cols-2 sm:gap-10 xl:gap-16 xl:px-16 text-amber-950 mt-10 md:mt-20 bg-champagne-pink bg-opacity-50 rounded-3xl"
+      >
+        <div className="rounded-full relative flex place-self-center">
           <Image
-            src="/images/profile.png"
+            src="/images/profile2.png"
             alt="profile picture"
-            className="absolute place-items-center drop-shadow-md"
             width={400}
             height={400}
           />
         </div>
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+        <div className="mt-4 md:mt-0 sm:p-8 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
           <p className="text-base lg:text-lg text-stone-500">
             I am an aspiring{" "}
@@ -99,7 +101,7 @@ export default function AboutSection() {
             set. I am a team player and I am excited to work with others to
             create amazing applications.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-row justify-start mt-8 sm:grid-flow-row">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
