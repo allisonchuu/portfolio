@@ -35,7 +35,7 @@ export default function StrawbeariGif() {
         <Image
           src="/images/strawberry.gif"
           alt="profile picture"
-          className="w-full h-[60px]"
+          className="w-auto h-[60px]"
           width={100}
           height={100}
           unoptimized={true}
