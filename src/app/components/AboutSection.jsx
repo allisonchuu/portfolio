@@ -100,7 +100,7 @@ export default function AboutSection() {
             About Me
             <Image
               src="/images/strawberryicon.png"
-              alt="profile picture"
+              alt="strawberry icon"
               className="w-auto h-[35px] inline-block ml-2 mt-0.5"
               width={75}
               height={75}

@@ -43,13 +43,29 @@ const BUTTON_DATA = [
     id: "resume",
     content: (
       <a href="/documents/01AllisonChu.pdf" target="_blank">
-        <button
-          className="px-1 py-1 w-3/5 md:w-fit rounded-full bg-gradient-to-br from-cherry-blossom-pink via-cambridge-blue to-celadon hover:bg-white text-amber-950"
-          download="proposed_file_name"
-        >
+        <button className="px-1 py-1 w-3/5 md:w-fit rounded-full bg-gradient-to-br from-cherry-blossom-pink via-cambridge-blue to-celadon hover:bg-white text-amber-950">
           <span className="block bg-white hover:bg-snow rounded-full px-5 py-2">
             Resume <ArrowDownTrayIcon className="inline-block size-5 mb-1" />
           </span>
+        </button>
+      </a>
+    ),
+  },
+  {
+    title: "GitHubRepo",
+    id: "github-repo",
+    content: (
+      <a href="https://github.com/allisonchuu/portfolio">
+        <button className="px-6 py-3 w-3/5 md:w-fit rounded-full bg-gradient-to-br from-cherry-blossom-pink via-cambridge-blue to-celadon hover:bg-champagne-pink text-white">
+          GitHub Repo{" "}
+          <Image
+            src="/images/strawberryicon.png"
+            alt="strawberry icon"
+            className="w-auto h-[20px] inline-block mb-1"
+            width={75}
+            height={75}
+            unoptimized={true}
+          />
         </button>
       </a>
     ),
@@ -90,7 +106,7 @@ export default function HeroSection() {
             this is my website :)
           </p>
           <motion.ul
-            className="w-auto h-auto flex flex-col md:flex-row list-none md:place-items-start gap-3"
+            className="w-auto h-auto flex flex-col lg:flex-row list-none md:place-items-start gap-3"
             variants={container}
             initial="hidden"
             animate="visible"
