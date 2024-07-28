@@ -26,14 +26,21 @@ export default function NavBar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-10 bg-westar bg-opacity-100">
-      <div className="flex flex-wrap items-center justify-between mx-auto px-6 py-2">
+      <div className="flex flex-wrap items-center justify-between mx-auto px-6 py-3 sm:py-4">
         <Link href={"/"}>
+          <Image
+            src="/images/strawbearilogo.png"
+            alt="strawberry icon image"
+            className="hidden sm:block"
+            width={200}
+            height={75}
+          />
           <Image
             src="/images/strawberryicon.png"
             alt="strawberry icon image"
-            className=""
-            width={75}
-            height={75}
+            className="block sm:hidden"
+            width={50}
+            height={50}
           />
         </Link>
         <div className="mobile-menu block md:hidden">
