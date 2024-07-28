@@ -8,8 +8,8 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <div className="flex flex-row">
-        <ul className="list-disc pl-5">
+      <div className="inline-flex">
+        <ul className="list-disc pl-5 ">
           <li>JavaScript</li>
           <li>React</li>
           <li>Node.js</li>
@@ -154,7 +154,7 @@ export default function AboutSection() {
                 Certifications
               </TabButton>
             </div>
-            <div className="p-4 rounded-lg bg-snow min-h-44">
+            <div className="p-4 rounded-3xl bg-snow min-h-44">
               {TAB_DATA.find((t) => t.id === tab).content}
             </div>
           </div>
