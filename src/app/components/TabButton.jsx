@@ -9,11 +9,10 @@ export default function TabButton({ active, selectTab, children }) {
     : "bg-snow bg-opacity-50";
   return (
     <motion.div
-      whileTap={{
-        scale: 0.8,
-        borderRadius: "100%",
+      whileHover={{
+        scale: 1.2,
       }}
-      className={`inline-block ${selectedClasses} rounded-lg px-3 mr-2 mb-2`}
+      className={`inline-block ${selectedClasses} rounded-full px-3 mr-3 mb-2 shadow-md`}
     >
       <button onClick={selectTab}>
         <p className={`p-1 ${buttonClasses}`}>{children}</p>

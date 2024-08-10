@@ -56,16 +56,8 @@ const BUTTON_DATA = [
     id: "github-repo",
     content: (
       <a href="https://github.com/allisonchuu/portfolio">
-        <button className="px-6 py-3 w-3/5 md:w-fit rounded-full bg-gradient-to-br from-cherry-blossom-pink via-cambridge-blue to-celadon hover:bg-champagne-pink text-white">
-          GitHub Repo{" "}
-          <Image
-            src="/images/strawberryicon.png"
-            alt="strawberry icon"
-            className="w-auto h-[20px] inline-block mb-1"
-            width={75}
-            height={75}
-            unoptimized={true}
-          />
+        <button className="px-4 py-3 w-3/5 md:w-fit rounded-full bg-gradient-to-br from-cherry-blossom-pink via-cambridge-blue to-celadon hover:bg-champagne-pink text-white">
+          &lt; / &gt;
         </button>
       </a>
     ),
@@ -75,10 +67,10 @@ const BUTTON_DATA = [
 export default function HeroSection() {
   return (
     <section>
-      <div className="grid grid-cols-1 md:grid-cols-12">
+      <div className="grid grid-cols-1 md:grid-cols-12 px-10">
         <div className="col-span-7 place-item-start text-center md:ml-3 lg:ml-10 xl:ml-15 md:my-auto md:text-left">
           <h1 className="text-amber-950 flex flex-col mb-2 sm:mb-4 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
-            <span className="font-light">hi, i&apos;m </span>
+            <span className="font-light">welcome</span>
             <span
               className={`text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-cambridge-blue`}
             >
@@ -103,7 +95,7 @@ export default function HeroSection() {
             </span>
           </h1>
           <p className="text-stone-500 text-base sm:text-lg mb-6 lg:text-xl">
-            this is my website :)
+            this pink panda is Strawbeari. she is my little mascot.
           </p>
           <motion.ul
             className="w-auto h-auto flex flex-col lg:flex-row list-none md:place-items-start gap-3"
@@ -112,7 +104,12 @@ export default function HeroSection() {
             animate="visible"
           >
             {BUTTON_DATA.map((buttonItem, index) => (
-              <motion.li key={index} variants={item}>
+              <motion.li
+                key={index}
+                variants={item}
+                whileHover={{
+                  scale: 1.1,
+                }}>
                 {buttonItem.content}
               </motion.li>
             ))}

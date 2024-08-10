@@ -2,6 +2,7 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import { motion } from "framer-motion";
 
 const TAB_DATA = [
   {
@@ -79,23 +80,23 @@ export default function AboutSection() {
     });
   };
 
-  //lg:grid-cols-2 lg:gap-10 lg:px-5 xl:gap-16 xl:px-16 mt-10 md:mt-20
-
   return (
     <section>
-      <div className="grid grid-cols-1 mt-10 px-5 md:mt-32 lg:grid-cols-2 text-amber-950  bg-champagne-pink bg-opacity-50 rounded-[50px]">
+      <div className="grid grid-cols-1 gap-8 mt-10 md:mt-32 lg:grid-cols-2 text-amber-950">
         <div
           id="about"
-          className="rounded-full relative flex place-self-center px-10 pt-5 sm:pt-10 lg:pt-0"
+          className="bg-champagne-pink bg-opacity-50 rounded-[50px] flex flex-col items-center justify-center p-10 shadow-inner"
         >
           <Image
-            src="/images/profile2.png"
+            src="/images/profile.png"
             alt="profile picture"
+            className="drop-shadow-md"
             width={400}
             height={400}
           />
         </div>
-        <div className="p-5 md:p-8 lg:py-12 text-left flex flex-col h-full">
+        <div
+          className="p-5 md:p-8 text-left flex flex-col h-full bg-champagne-pink bg-opacity-50 rounded-[50px] shadow-inner">
           <h2 className="flex flex-row align-middle text-4xl font-bold mb-3 ml-3">
             About Me
             <Image
@@ -107,7 +108,7 @@ export default function AboutSection() {
               unoptimized={true}
             />
           </h2>
-          <p className="rounded-3xl px-6 py-3 bg-snow bg-opacity-50 text-base lg:text-xl text-stone-500">
+          <p className="rounded-3xl px-6 py-3 bg-snow bg-opacity-50 text-base lg:text-xl text-stone-500 shadow-md">
             I am an aspiring{" "}
             <span className="text-cambridge-blue">Full Stack Developer </span>
             with a passion for creating interactive and responsive web
@@ -124,7 +125,7 @@ export default function AboutSection() {
             create amazing applications.
           </p>
           <div className="my-8">
-            <div className="inline-block ml-3">
+            <div className="inline-block ml-2">
               <TabButton
                 selectTab={() => handleTabChange("skills")}
                 active={tab === "skills"}
@@ -150,12 +151,12 @@ export default function AboutSection() {
                 Certifications
               </TabButton>
             </div>
-            <div className="p-4 rounded-3xl bg-snow min-h-44">
+            <div className="p-4 mt-1 rounded-3xl bg-snow min-h-44 shadow-md">
               {TAB_DATA.find((t) => t.id === tab).content}
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 }
