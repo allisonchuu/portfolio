@@ -82,7 +82,7 @@ export default function HeroSection() {
         <div className="col-span-6 place-item-start text-center lg:pr-10 xl:ml-15 md:my-auto md:text-left">
           <h1 className="text-amber-950 flex flex-col mb-2 sm:mb-4 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
             <span className="font-light">
-              hello, i'm
+              hello, i&apos;m
             </span>
             <span
               className={`text-4xl md:text-[40px] lg:text-5xl xl:text-6xl text-cambridge-blue my-1 flex justify-center md:justify-start`}
