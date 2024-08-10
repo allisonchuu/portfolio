@@ -60,7 +60,7 @@ export default function ProjectSection() {
           <ProjectTag onClick={handleTagChange} name="Web" isSelected={tag === "Web"} />
           <ProjectTag onClick={handleTagChange} name="Game" isSelected={tag === "Game"} />
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 text-center p-10 mx-5 mb-5 rounded-3xl bg-snow bg-opacity-50 shadow-lg">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 text-center p-4 sm:p-10 sm:mx-5 mb-5 rounded-3xl bg-snow bg-opacity-50 shadow-lg">
           {filteredProjects.map((project, index) =>
             <ProjectCard
               key={index}
