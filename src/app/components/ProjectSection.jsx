@@ -51,11 +51,11 @@ export default function ProjectSection() {
 
   return (
     <section>
-      <div className="my-8 md:my-12 p-5 sm:p-6 lg:p-10 rounded-[50px] bg-champagne-pink bg-opacity-50 shadow-inner">
+      <div id="projects" className="my-8 md:my-12 p-5 sm:p-6 lg:p-10 rounded-[50px] bg-champagne-pink bg-opacity-50 shadow-inner scroll-m-">
         <h2 className="text-center text-4xl font-bold text-amber-950 mb-6">
           My Projects
         </h2>
-        <div className="flex flex-row justify-center items-center mb-4">
+        <div className="flex flex-row justify-center items-center mb-2">
           <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"} />
           <ProjectTag onClick={handleTagChange} name="Web" isSelected={tag === "Web"} />
           <ProjectTag onClick={handleTagChange} name="Game" isSelected={tag === "Game"} />

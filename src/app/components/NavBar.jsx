@@ -15,32 +15,26 @@ const navLinks = [
     title: "Projects",
     path: "#projects",
   },
-  {
-    title: "Contact",
-    path: "#contact",
-  },
+  // {
+  //   title: "Contact",
+  //   path: "#contact",
+  // },
 ];
 
 export default function NavBar() {
   const [navBarOpen, setNavBarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-westar bg-opacity-100">
-      <div className="flex flex-wrap items-center justify-between mx-auto px-6 py-3 sm:py-4">
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-westar bg-opacity-100 h-20">
+      <div className="flex flex-wrap items-center justify-between mx-auto px-6 py-3 sm:py-4 h-full">
         <Link href={"/"}>
-          <Image
-            src="/images/strawbearilogo.png"
-            alt="strawberry icon image"
-            className="hidden sm:block"
-            width={200}
-            height={75}
-          />
+
           <Image
             src="/images/strawberryicon.png"
             alt="strawberry icon image"
-            className="block sm:hidden"
-            width={50}
-            height={50}
+            className="block"
+            width={42}
+            height={42}
           />
         </Link>
         <div className="mobile-menu block md:hidden">

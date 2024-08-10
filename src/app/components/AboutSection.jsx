@@ -97,12 +97,12 @@ export default function AboutSection() {
         </div>
         <div
           className="p-5 md:p-8 text-left flex flex-col h-full bg-champagne-pink bg-opacity-50 rounded-[50px] shadow-inner">
-          <h2 className="flex flex-row align-middle text-4xl font-bold mb-3 ml-3">
+          <h2 className="flex flex-row justify-center sm:justify-start align-middle text-4xl font-bold mb-3 ml-3">
             About Me
             <Image
               src="/images/strawberryicon.png"
               alt="strawberry icon"
-              className="w-auto h-[35px] inline-block ml-2 mt-0.5"
+              className="hidden w-auto h-[35px] sm:inline-block ml-2 mt-0.5"
               width={75}
               height={75}
               unoptimized={true}
