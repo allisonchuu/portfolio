@@ -5,6 +5,14 @@ import ProjectTag from "./ProjectTag"
 
 const projectsData = [
   {
+    title: "Sorting Visualizer",
+    description: "An application that helps visualize various sorting algorithms",
+    imgUrl: "/images/projects/sorting-visualizer.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/allisonchuu/sorting-visualizer",
+    previewUrl: "https://allisonchuu.github.io/sorting-visualizer/",
+  },
+  {
     title: "Light Your Future",
     description: "An awesome mini-game where you can collect resources on your way to the future!",
     imgUrl: "/images/projects/lightyourfuture.png",
